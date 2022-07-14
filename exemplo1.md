@@ -411,14 +411,38 @@ public static long getSerialversionuid() {
 }
 
  *************************
- 
+
+# PASSO A PASSO PARA SUBIR O PROJETO NO GIT:
 echo "# java-relacionamento-springboot" >> README.md
+
+## Inicia o git no projeto
 git init
-git add README.md
+
+## Adiciona arquivos ao github
+git add .
+
+## Adiciona um come a atualização do projeto
 git commit -m "first commit"
+
+## Cria a branch
 git branch -M main
-git remote add origin https://github.com/devedsonbelem/java-relacionamento-springboot.git
+
+## Adiciona o caminho do projeto
+git remote add origin git@github.com:devedsonbelem/java-relacionamento-springboot.git
+
+## Remove o caminho origin se já houver um anterior
+git remote remove origin
+
+## Sobe os arquivos para a branch main
 git push -u origin main
- 
+
+
+# PARA CRIAR A CHAVE SSH:
+ssh-keygen -t rsa -b 4096 -C "devedsonbelem@outlook.com"
+
+## Comando para clonar o projeto 
+git clone git@github.com:devedsonbelem/java-relacionamento-springboot.git
+
+
 
 
